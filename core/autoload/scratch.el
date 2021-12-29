@@ -60,6 +60,7 @@ the first, fresh scratch buffer you create. This accepts:
         (or buffer (get-buffer-create buffer-name))
       (setq default-directory directory)
       (setq-local so-long--inhibited t)
+      (setq-local lexical-binding t)
       (if dont-restore-p
           (erase-buffer)
         (unless buffer
