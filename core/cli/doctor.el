@@ -86,7 +86,7 @@ in."
            (warn! "Cannot determine Git version. Doom requires git 2.23 or newer!")))))
 
    (unless (executable-find "rg")
-     (error! "Couldn't find the `rg' binary; this a hard dependecy for Doom, file searches may not work at all")))
+     (error! "Couldn't find the `rg' binary; this a hard dependency for Doom, file searches may not work at all")))
 
   (print! (start "Checking for Emacs config conflicts..."))
   (when (file-exists-p "~/.emacs")
@@ -140,7 +140,7 @@ in."
                   "Please remove them from your gitconfig or use a conditional includeIf rule to "
                   "only apply your rewrites to specific repositories. See "
                   "'https://git-scm.com/docs/git-config#_includes' for more information."))
-    (error! "Couldn't find the `git' binary; this a hard dependecy for Doom!"))
+    (error! "Couldn't find the `git' binary; this a hard dependency for Doom!"))
 
   (print! (start "Checking Doom Emacs..."))
   (condition-case-unless-debug ex
